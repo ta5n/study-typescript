@@ -13,9 +13,9 @@ let collection: TodoCollection = new TodoCollection('Osman', todoList);
 // console.clear();
 console.log(`${collection.userName}'s Todo List:`);
 let newId: number = collection.addTodo('Go for a walk');
-let todoItem: TodoItem = collection.getById(newId);
+let todoItem: TodoItem = collection.getById(newId)!;
 todoItem?.printDetails();
 console.log('todoItem :>> ', JSON.stringify(todoItem));
 console.log('todoItem :>> ', todoItem);
 
-collection.addTodo(todoItem);
+// collection.addTodo(todoItem);
