@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "sourceMap": true,
+    "noUnusedLocals": true,
+    "outDir": "js",
+    "strict": true,
+    "watch": true
+  },
+  "files": ["app/app.ts"]
+}
