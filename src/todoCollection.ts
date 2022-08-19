@@ -5,7 +5,7 @@ export class TodoCollection {
   private itemMap = new Map<number, TodoItem>();
 
   constructor(public userName: string, public todos: TodoItem[] = []) {
-    todos.forEach(item => this.itemMap.set(item.id, item));
+    todos.forEach((item) => this.itemMap.set(item.id, item));
   }
 
   addTodo(taskTitle: string): number {
@@ -16,7 +16,7 @@ export class TodoCollection {
     return this.nextId;
   }
 
-  getById(id: number): TodoItem {
+  getById(id: number): TodoItem | undefined {
     return this.itemMap.get(id);
   }
 
